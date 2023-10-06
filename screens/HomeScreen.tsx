@@ -1,5 +1,5 @@
-import React, { FC, useState } from 'react'
-import { View , StyleSheet, SafeAreaView, TouchableOpacity , Text, TouchableHighlight, StatusBar} from 'react-native'
+import React from 'react'
+import {StyleSheet, SafeAreaView, StatusBar} from 'react-native'
 import { RootParamList } from '../App'
 import { StackNavigationProp } from '@react-navigation/stack'
 import { PlusButton } from '../components/PlusButton'

@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, {useState} from 'react'
 import {SafeAreaView , Text, View , StyleSheet, TouchableHighlight} from 'react-native';
 import {TextInput} from 'react-native-paper';
 
