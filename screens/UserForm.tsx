@@ -1,7 +1,6 @@
 import React, { Component, useState } from 'react'
 import {SafeAreaView , Text, View , StyleSheet, TouchableHighlight} from 'react-native';
 import {TextInput} from 'react-native-paper';
-import * as data from '../data/database.json'
 
 const UserForm = () => {
 
@@ -12,30 +11,7 @@ const UserForm = () => {
     const [userName , setUserName] =  useState('');
     const [firstUserName , setFirstUserName] =  useState('');
 
-
-    //const saveUser = async() => {
-        /*try {
-            const fileData = await readFile(filePath , 'utf-8');
-            const jsonData = JSON.parse(fileData);
-
-            const newUser = {
-                userId : jsonData.users.length > 0 ? jsonData.users[jsonData.users.length - 1].userId + 1 : 1,
-                userName : userName,
-                firstUserName : firstUserName,
-            }
-            jsonData.users.push(newUser);
-            const updated = JSON.stringify(jsonData , null , 2);
-            await writeFile(filePath , fileData , 'utf-8');
-            console.log('enregistrement réussi');
-            setUserName('');
-            setFirstUserName('');
-        } catch (error) {
-            console.log("l'erreur produite est " + error)
-        }*/
-      
-
-    //}
-    return(
+       return(
         <SafeAreaView style={styles.screen}>
             <View style={styles.container}>
             <TextInput style={styles.text}  label="Entrer le nom de l'utilisateur" mode='outlined' value={userName} onChangeText={userName => setUserName(userName)}></TextInput>
