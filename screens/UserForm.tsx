@@ -3,11 +3,7 @@ import {SafeAreaView , Text, View , StyleSheet, TouchableHighlight} from 'react-
 import {TextInput} from 'react-native-paper';
 
 const UserForm = () => {
-
-    /*const word = data.users.map((user) => {
-        return[user.userId , user.userName , user.firstUserName];
-    } );*/
-    const word = require("C:\Users\Ronald\secondProject\data\database.json");
+    
     const [userName , setUserName] =  useState('');
     const [firstUserName , setFirstUserName] =  useState('');
 
@@ -17,7 +13,7 @@ const UserForm = () => {
             <TextInput style={styles.text}  label="Entrer le nom de l'utilisateur" mode='outlined' value={userName} onChangeText={userName => setUserName(userName)}></TextInput>
             <TextInput style={styles.text}  label="Entrer le prenom de l'utilisateur" mode='outlined' value={firstUserName} onChangeText={firstUserName => setFirstUserName(firstUserName)}></TextInput>
             </View>
-            <TouchableHighlight onPress={() =>console.log(word)} style={styles.button}><Text style={{fontStyle:'normal' , fontSize:17, color:'#ffffff'}}>Enregistrer l'utilisateur</Text></TouchableHighlight>
+            <TouchableHighlight onPress={() =>console.log('hello')} style={styles.button}><Text style={{fontStyle:'normal' , fontSize:17, color:'#ffffff'}}>Enregistrer l'utilisateur</Text></TouchableHighlight>
         </SafeAreaView>
     )
 }
